@@ -17,11 +17,7 @@ vector<int> findElement(vector<int> array, int element)
 }
 
 vector<int> twoSum(vector<int>& nums, int target) {
-    if(target % 2 == 0 && count(nums.begin(), nums.end(), target /2) == 2)
-    {
-        
-    }
-		if (target % 2 == 0 && count(nums.begin(), nums.end(), target / 2) == 2)
+	if (target % 2 == 0 && count(nums.begin(), nums.end(), target / 2) == 2)
 	{
 		return findElement(nums, target / 2);
 	}
